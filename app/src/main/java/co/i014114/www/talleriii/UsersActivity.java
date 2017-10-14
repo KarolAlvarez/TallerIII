@@ -68,19 +68,8 @@ public class UsersActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         loadData2();
-
-        //showpantallaDos();
-
-
         return super.onOptionsItemSelected(item);
     }
-/*
-    public void showpantallaDos(){
-        Intent intent= new Intent(getApplicationContext(), Pantalla2.class );
-        startActivity(intent);
-    }
-*/
-
 
     // Metodo para validar la conexion a internet
     public Boolean isOnLine() {

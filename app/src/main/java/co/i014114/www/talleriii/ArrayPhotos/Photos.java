@@ -18,6 +18,16 @@ public class Photos {
         ArrayPhotos[7] = "https://i0.wp.com/www.sopitas.com/wp-content/uploads/2017/10/poster-last-jedi.jpg?resize=860%2C450";
         return ArrayPhotos[x];
     }
+
+    public String getUrlPhoto() {
+        return urlPhoto;
+    }
+
+    public void setUrlPhoto(String urlPhoto) {
+        this.urlPhoto = urlPhoto;
+    }
+
+    private String urlPhoto;
     private int x;
     private String[] ArrayPhotos;
 }

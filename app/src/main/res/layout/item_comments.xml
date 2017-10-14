@@ -1,12 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="300dp"
+    android:layout_height="wrap_content"
     android:layout_margin="6dp"
     android:orientation="vertical">
 
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="10dp">
 
+        <TextView
+            android:id="@+id/txt_pantalla3_postId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post id: 1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_pantalla3_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Id: 1"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_pantalla3_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name: abcdef"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_pantalla3_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: abcdef@gmail.com"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_pantalla3_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="body: laudantium enim quasi est quidem magnam voluptate ipsam eos tempora quo necessitatibus dolor quam autem quasi reiciendis et nam sapiente accusantium"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+
+
+            />
+
+
+    </LinearLayout>
 
 
 </android.support.v7.widget.CardView>

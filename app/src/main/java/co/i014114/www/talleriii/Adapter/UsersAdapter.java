@@ -92,7 +92,10 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.ViewHolder> 
 
             Context contextItem = view.getContext();
             Intent intent = new Intent(context, PostsActivity.class);
-            intent.putExtra("idParametro", usersModelList.get(getLayoutPosition()).getId());
+            intent.putExtra("idUser", usersModelList.get(getLayoutPosition()).getId());
+            intent.putExtra("nameUser", usersModelList.get(getLayoutPosition()).getUserName());
+
+
             contextItem.startActivity(intent);
         }
     }
