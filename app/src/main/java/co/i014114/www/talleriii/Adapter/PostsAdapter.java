@@ -2,7 +2,6 @@ package co.i014114.www.talleriii.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,7 +14,6 @@ import java.util.List;
 
 import co.i014114.www.talleriii.CommentsActivity;
 import co.i014114.www.talleriii.Model.PostsModel;
-import co.i014114.www.talleriii.PostsActivity;
 import co.i014114.www.talleriii.R;
 
 /**
@@ -52,7 +50,8 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         //     Picasso.with(context).load(phothos.getUrlPhoto()).into((holder.foto));
 
         // Encargado de trabajar con el item.xml y sus componentes
-        holder.userId.setText(Integer.toString(postsModelList.get(position).getUserId()));;
+        holder.userId.setText(Integer.toString(postsModelList.get(position).getUserId()));
+        ;
         holder.id.setText(Integer.toString(postsModelList.get(position).getId()));
         holder.title.setText("Title: " + postsModelList.get(position).getTitle());
         holder.body.setText("Body: " + postsModelList.get(position).getBody());

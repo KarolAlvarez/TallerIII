@@ -27,20 +27,16 @@ import co.i014114.www.talleriii.Parser.CommentsJson;
 
 public class CommentsActivity extends AppCompatActivity {
     private Toolbar toolbar;
-
     private ProgressBar progressBar;
     private RecyclerView recyclerView;
     private List<CommentsModel> commentsModelList;
     private CommentsAdapter commentsAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_comments);
         toolbar = (Toolbar) findViewById(R.id.Tolbar);
         showToolbar(getResources().getString(R.string.Pantalla3), true);
-
-
         progressBar = (ProgressBar) findViewById(R.id.id_pv_Pantalla3);
         recyclerView = (RecyclerView) findViewById(R.id.id_rv_Pantalla3);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
@@ -62,7 +58,7 @@ public class CommentsActivity extends AppCompatActivity {
 
     @Override
     public boolean onCreateOptionsMenu(Menu mimenu) {
-        getMenuInflater().inflate(R.menu.mi_menu2, mimenu);
+        getMenuInflater().inflate(R.menu.mi_menu3, mimenu);
 
         return super.onCreateOptionsMenu(mimenu);
     }

@@ -49,8 +49,6 @@ public class PostsActivity extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-
-
         loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
 
         Bundle us = getIntent().getExtras();
