@@ -18,8 +18,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PostsActivity" />
-        <activity android:name=".CommentsActivity"></activity>
+
+        <!--Segunda actividad posts-->
+        <activity android:name=".PostsActivity"
+            android:parentActivityName=".UsersActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".UsersActivity"
+                >
+
+            </meta-data>
+
+
+        </activity>
+
+
+        <activity android:name=".CommentsActivity"
+            android:parentActivityName=".PostsActivity">
+
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".PostsActivity"
+                />
+
+
+        </activity>
     </application>
 
 </manifest>

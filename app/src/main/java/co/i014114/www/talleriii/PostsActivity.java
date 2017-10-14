@@ -1,5 +1,6 @@
 package co.i014114.www.talleriii;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -32,14 +33,21 @@ public class PostsActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(mimenu);
     }
 
+
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
 
+        showpantallaDos();
 
 
         return super.onOptionsItemSelected(item);
     }
 
+    public void showpantallaDos(){
+        Intent intent= new Intent(getApplicationContext(), CommentsActivity.class );
+        startActivity(intent);
+    }
 
 }
