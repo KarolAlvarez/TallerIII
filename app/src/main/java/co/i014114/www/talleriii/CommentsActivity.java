@@ -66,22 +66,25 @@ public class CommentsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
-            case R.id.MiMenu3actualizar: {
-                loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
+            case android.R.id.home:
+                finish();
+                return true;
+            case R.id.MiMenu3actualizar:
+                loadData2(Integer.toString(getIntent().getExtras().getInt("idPosts")));
                 break;
-            }
-            case R.id.MiMenu3salir: {
+
+            case R.id.MiMenu3salir:
                 finish();
                 break;
-            }
         }
-
         return super.onOptionsItemSelected(item);
     }
 
 
     // Metodo para validar la conexion a internet
+
     public Boolean isOnLine() {
         // Hacer llamado al servicio de conectividad utilizando el ConnectivityManager
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);

@@ -75,6 +75,10 @@ public class PostsActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case android.R.id.home: {
+                finish();
+                return true;
+            }
             case R.id.MiMenu2salir: {
                 finish();
                 break;
@@ -83,6 +87,8 @@ public class PostsActivity extends AppCompatActivity {
                 loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
                 break;
             }
+            default:
+                return super.onOptionsItemSelected(item);
 
         }
 
