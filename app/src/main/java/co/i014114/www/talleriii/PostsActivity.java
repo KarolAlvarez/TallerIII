@@ -1,6 +1,7 @@
 package co.i014114.www.talleriii;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -73,8 +74,28 @@ public class PostsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
+        switch (item.getItemId()) {
+            case R.id.MiMenu2salir: {
+                finish();
+                break;
+            }
+            case R.id.MiMenu2actualizar: {
+                loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
+                break;
+            }
+
+        }
+
+
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void layoutChange() {
+
+        Intent intent = new Intent(getApplicationContext(), UsersActivity.class);
+        startActivity(intent);
+
     }
 
 

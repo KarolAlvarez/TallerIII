@@ -1,6 +1,7 @@
 package co.i014114.www.talleriii;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -14,9 +15,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-
-
-
 
 import org.json.JSONException;
 
@@ -58,6 +56,8 @@ public class UsersActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(titulo);
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu mimenu) {
         getMenuInflater().inflate(R.menu.mi_menu1, mimenu);
@@ -67,8 +67,18 @@ public class UsersActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        loadData2();
-        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.MiMenu1actualizar: {
+                loadData2();
+                break;
+            }case R.id.MiMenu1salir:{
+                finish();
+                break;
+            }
+
+
+        }
+        return true;
     }
 
     // Metodo para validar la conexion a internet

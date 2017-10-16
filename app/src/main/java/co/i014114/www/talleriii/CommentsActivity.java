@@ -31,6 +31,7 @@ public class CommentsActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
     private List<CommentsModel> commentsModelList;
     private CommentsAdapter commentsAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +66,17 @@ public class CommentsActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
+        switch (item.getItemId()) {
+            case R.id.MiMenu3actualizar: {
+                loadData2(Integer.toString(getIntent().getExtras().getInt("idUser")));
+                break;
+            }
+            case R.id.MiMenu3salir: {
+                finish();
+                break;
+            }
+        }
+
         return super.onOptionsItemSelected(item);
     }
 

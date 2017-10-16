@@ -4,6 +4,8 @@
     <string name="Pantalla1">Users</string>
     <string name="Pantalla2">Posts</string>
     <string name="Pantalla3">Comments</string>
+    <string name="atras">Atras</string>
+    <string name="salir">Salir</string>
 
 
 </resources>

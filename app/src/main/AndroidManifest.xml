@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -19,20 +20,21 @@
             </intent-filter>
         </activity>
 
-        <!--Segunda actividad posts-->
-        <activity android:name=".PostsActivity"
-            android:parentActivityName=".UsersActivity">
+        <!--Segunda actividad posts       -->
+        <activity
+            android:name=".PostsActivity"
 
+            android:parentActivityName=".UsersActivity"
 
+            >
 
 
         </activity>
 
-
-        <activity android:name=".CommentsActivity"
+        <!--   actividad tres comments        -->
+        <activity
+            android:name=".CommentsActivity"
             android:parentActivityName=".PostsActivity">
-
-
 
 
         </activity>

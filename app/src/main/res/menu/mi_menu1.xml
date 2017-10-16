@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <item
-    android:id="@+id/MiMenu1"
+    android:id="@+id/MiMenu1actualizar"
     android:title="@string/Actualizar"
+    />
+<item
+    android:id="@+id/MiMenu1salir"
+    android:title="@string/salir"
     />
 </menu>
